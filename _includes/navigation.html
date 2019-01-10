@@ -1,11 +1,18 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<ul>
+
 {% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
+  <div class="navbar-nav align-items-lg-center ml-lg-4">
+    <a class="anchor-link nav-item nav-link" href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
     {% if item.subitems %}
       {% include navigation.html navigation=item.subitems %}
     {% endif %}
-  </li>
+  </div>
 {% endfor %}
-</ul>
+<div class="navbar-nav align-items-lg-center ml-auto">
+         <div class="nav-item py-2 py-lg-0 ml-lg-4">
+           <a href="https://id.everpayinc.com/login" class="btn btn-default btn-round">Sign In</a>
+         </div>
+         <div class="nav-item py-2 py-lg-0 ml-lg-2">
+           <a href="https://id.everpayinc.com/signup" class="btn btn-primary btn-round">Sign Up</a>
+         </div>
+</div>

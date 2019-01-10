@@ -1,12 +1,118 @@
----
+ ---
 layout: default
 ---
+<div class="swiper-container" id="landing-slider-parallax">
+    <div class="landing-slider-parallax-bg" style="background-image:url(/assets/img/pages/landing-1-bg.png)" data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide jumbotron ui-hero ui-mh-100vh bg-transparent overflow-hidden">
+        <div class="container-fluid justify-content-center px-lg-5">
+          <div class="row justify-content-center w-100 pt-3">
+
+            <div class="col-lg-7 col-xl-6 text-lg-left text-center my-5" data-swiper-parallax="-50%">
+              <h1 class="display-3 font-secondary font-weight-semibold mb-4">
+                Open Commerce for Everyone
+              </h1>
+              <p class="lead text-muted pb-3">
+                No more manual data logging, maintaining tracking plans, custom ETL pipelines, or one-off report requests. Just insights.
+              </p>
+              <div class="mt-2">
+                <button type="button" class="landing-btn btn btn-lg btn-round btn-primary">GET STARTED</button>
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-center pl-lg-5" data-swiper-parallax="100%" data-swiper-parallax-opacity="0">
+              <div class="ui-presentation-right ui-device macbook float-left rounded">
+                <img class="device-img" src="/assets/img/devices/macbook-gold.png" alt>
+                <div class="device-content">
+                  <img src="/assets/img/uikit/app.png" alt>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide jumbotron ui-hero bg-transparent py-0 m-0">
+        <div class="d-flex flex-column w-100 ui-mh-100vh">
+
+          <div class="container d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="row flex-basis-100 pt-5 mt-4 mt-sm-5">
+
+              <div class="col-lg-8 text-center py-5 mx-auto">
+                <h1 class="display-3 font-secondary font-weight-semibold mb-4" data-swiper-parallax-y="100">
+                  Manage All of Your Stuff with Single App
+                </h1>
+                <p class="lead text-muted pb-3" data-swiper-parallax-y="0">
+                  Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu, cu quo alii scriptorem. Oratio aperiam per et, per euismod nominati forensibus cu.
+                </p>
+                <div class="mt-2" data-swiper-parallax-y="-100">
+                  <button type="button" class="landing-btn btn btn-lg btn-round btn-primary">GET STARTED</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="flex-grow-0 mx-3">
+            <div class="ui-window w-100 rounded-top mx-auto" style="max-width:800px;max-height:250px;" data-swiper-parallax="0" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1500">
+              <div class="window-content">
+                <img src="/assets/img/uikit/app.png" alt>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide jumbotron ui-hero ui-mh-100vh bg-transparent">
+        <div class="container-fluid justify-content-center px-lg-5">
+          <div class="row justify-content-center w-100 pt-3">
+
+            <div class="col-lg-4 text-center my-5 my-sm-0" data-swiper-parallax="200" data-swiper-parallax-opacity="0">
+              <div class="ui-device iphone mw-100 mx-auto" style="width: 230px;">
+                <div class="device-content">
+                  <img src="assets/img/uikit/app-phone.png" alt>
+                </div>
+                <img class="device-img" src="/assets/img/devices/iphone.png" alt>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-xl-6 text-lg-left text-center mx-xl-5" data-swiper-parallax="-100">
+              <h1 class="display-3 font-secondary font-weight-semibold mb-4">
+                A Lot of Features, Unlimited Platforms
+              </h1>
+              <p class="lead text-muted pb-3">
+                Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu, cu quo alii scriptorem. Oratio aperiam per et, per euismod nominati forensibus cu.
+              </p>
+              <div class="mt-2">
+                <button type="button" class="landing-btn btn btn-lg btn-round btn-primary">GET STARTED</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="landing-slider-next" class="swiper-button-next custom-icon">
+      <i class="lnr lnr-chevron-right text-primary"></i>
+    </div>
+    <div id="landing-slider-prev" class="swiper-button-prev custom-icon">
+      <i class="lnr lnr-chevron-left text-primary"></i>
+    </div>
+  </div>
+
+<div class="bg-white">
 
 <h2>{{ page.title }}</h2>
 
   {% include page-intro.html %}
 
   {{ content }}
+
+<div class="landing-separator-stripes my-4"></div>
 
   <section>
 
@@ -21,3 +127,71 @@ layout: default
     </ul>
 
   </section>
+
+<hr class="landing-separator border-light mx-auto">
+
+<div class="row text-center">
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-star"></span>
+          </div>
+          <h5>Dapibus ac facilisis in</h5>
+          <div class="text-muted small">
+            Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu, cu quo alii scriptorem
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-picture"></span>
+          </div>
+          <h5>Cras justo odio</h5>
+          <div class="text-muted small">
+            Etiam vivendo eu sea, purto ponderum mediocritatem at pro. Ex tantas invenire dissentiunt mea.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-calendar-full"></span>
+          </div>
+          <h5>Porta ac consectetur ac</h5>
+          <div class="text-muted small">
+            Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse, harum honestatis cum te.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-camera"></span>
+          </div>
+          <h5>Nullam lobortis</h5>
+          <div class="text-muted small">
+            Praesent massa quam, luctus et efficitur congue, aliquam quis quam. In tellus quam, ornare et consectetur ut, ullamcorper vitae nunc.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-pie-chart"></span>
+          </div>
+          <h5>Quisque dictum magna</h5>
+          <div class="text-muted small">
+            Curabitur rutrum eleifend urna, sit amet iaculis metus consequat at. Pellentesque id accumsan leo.
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="display-4 text-primary mx-auto mb-4">
+            <span class="lnr lnr-layers"></span>
+          </div>
+          <h5>Suspendisse facilisis laoreet</h5>
+          <div class="text-muted small">
+            Curabitur tristique in elit in fermentum. Sed pellentesque ullamcorper risus pellentesque finibus.
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button type="button" class="landing-btn btn btn-primary btn-lg">LEARN MORE</button>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
